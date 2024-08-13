@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #4b0082, #8a2be2); 
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    font-family: 'Caveat', cursive; 
+}
+
+.navbar h1 {
+    margin: 0;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+}
+
+.navbar h1:hover {
+    color: #ffffff; 
+    text-shadow: 0 0 10px #8a2be2; 
+}
+
+.container {
+    margin-top: 70px; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#songList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#songList li {
+    background: #1f1f1f;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-style: italic;
+}
+
+#songList li:hover {
+    background: #333;
+    border-color: #555;
+    color: #8a2be2; 
+    font-size: large;
+}
+
+.suggestion-box {
+    display: none;
+    position: fixed;
+    top: 95px; 
+    right: 10px;
+    background: #1f1f1f;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.suggestion-box h2 {
+    margin-top: 0;
+}
+
+.audio-player {
+    width: 100%;
+    margin: 10px 0; 
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #555;
+    color: #8a2be2; 
+    transform: scale(1.2); 
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+#songList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#songList li {
+    background: #1f1f1f;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#songList li .song-name {
+    text-align: left;
+    padding-left: 10px; 
+    flex: 1;
+    font-weight: bold;
+}
+
+#songList li .singer-name {
+    text-align: right;
+    font-style: italic;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#suggestionBox {
+    text-align: center;
+    padding: 20px;
+}
+
+#currentSongName {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#singerName,
+#albumName {
+    font-style: italic;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#singerName {
+    text-align: center;
+}
+
+#albumName {
+    text-align: center;
+}
+
+#singerName::before {
+    /* content: '🎤'; */
+    margin-right: 5px;
+}
+
+#albumName::before {
+    /* content: '💿'; */
+    margin-right: 5px;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333435;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #323436;
+}
+
+/* Ensure that the song details are in a single line */
+.song-details {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    gap: 10px; /* Space between singer and album text */
+    margin-top: 5px; /* Space between song name and details */
+}
+
+#singerName, #albumName {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0; /* Remove default margin for inline alignment */
+}
+
+/* Icons before text */
+#singerName::before {
+    /* content: '🎤'; */
+    margin-right: 5px;
+}
+
+#albumName::before {
+    /* content: '💿'; */
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 80em) {
+    .suggestion-box {
+        position: fixed;
+        top: 400px;
+        left: 50%; /* Center horizontally */
+        right: 50%;
+        transform: translateX(-50%) scale(0.95); /* Center and scale */
+        width: 94vw; /* 90% of the viewport width */
+        max-width: calc(100% - 10px); /* Ensure it doesn't exceed the viewport minus margins */
+        margin-left: 0vw; /* 5% from the left of the viewport */
+        margin-right: 0vw; /* 5% from the right of the viewport */
+        opacity: 0.95;
+        box-sizing: border-box; /* Include padding and border in width calculation */
+        height: fit-content;
+    }
+
+    .suggestion-box h2 {
+        font-size: 18px;
+    }
+
+    #currentSongName {
+        font-size: 20px;
+    }
+
+    #singerName, #albumName {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
