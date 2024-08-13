@@ -9,7 +9,7 @@ Easily play, pause, and navigate through tracks.
 Automatically curated playlists to keep the music flowing.  
 ## Built With:  
 **HTML & CSS:**  
-For a responsive and attractive interface.<br>  
+For a responsive and attractive interface.    
 **JavaScript:**     
 Drives dynamic functionality and the recommendation engine.  
 **Data Structures & Algorithms:**    
