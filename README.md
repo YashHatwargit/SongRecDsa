@@ -17,6 +17,5 @@ Ensures efficient and accurate song matching.
 ## Website Link
 [Check out the website here](https://yashhatwargit.github.io/SongRecDsa/)
 ## Images
-![img1](https://github.com/user-attachments/assets/e13b794f-a657-4d30-b896-aad1f8b51c53)
-![img2](https://github.com/user-attachments/assets/60bb2136-ae3a-4cac-b51c-ddff5efe0b19)
+![img1](https://github.com/user-attachments/assets/ca23d11e-2765-4759-b560-54217e40c44d)
 ![img3](https://github.com/user-attachments/assets/1acc452f-fb41-4d70-a962-61814c7cd200)
