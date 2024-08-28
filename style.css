@@ -236,7 +236,7 @@ body {
     margin-right: 5px;
 }
 
-@media only screen and (max-width: 80em) {
+@media only screen and (max-width: 60em) {
     .suggestion-box {
         position: fixed;
         top: 400px;
